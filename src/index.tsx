@@ -78,6 +78,7 @@ const AuthCode: React.FC<Props> = ({
     inputs.push(
       <input
         key={i}
+        pattern={allowedCharacters?.toString()}
         onChange={handleOnChange}
         onKeyDown={handleOnKeyDown}
         onFocus={handleOnFocus}
