@@ -85,7 +85,7 @@ const AuthCode: React.FC<Props> = ({
         onKeyDown={handleOnKeyDown}
         onFocus={handleOnFocus}
         onPaste={handleOnPaste}
-        type={inputType || password ? 'password' : 'text'}
+        type={inputType || (password ? 'password' : 'text')}
         ref={(el: HTMLInputElement) => (inputsRef.current[i] = el)}
         maxLength={1}
         style={inputStyle}
