@@ -1,10 +1,10 @@
 {
-  "name": "react-auth-code-input",
+  "name": "react-auth-code-input-with-pattern",
   "version": "1.1.1",
   "description": "A React Component for inputting Auth Codes inspired in Apple Two-Factor Authentication UI. It allows deleting using the backspace and pasting as well",
   "author": "drac94",
   "license": "MIT",
-  "repository": "drac94/react-auth-code-input",
+  "repository": "nirelko/react-auth-code-input",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",

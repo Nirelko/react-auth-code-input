@@ -5,6 +5,7 @@ type Props = {
   allowedCharacters?: RegExp;
   onChange?: (res: string) => void;
   password?: boolean;
+  inputType?: string;
   inputStyle?: React.CSSProperties;
   containerStyle?: React.CSSProperties;
 };
@@ -14,6 +15,7 @@ const AuthCode: React.FC<Props> = ({
   allowedCharacters = '^[A-Za-z0-9]*$',
   onChange,
   password,
+  inputType,
   inputStyle,
   containerStyle
 }) => {
@@ -83,7 +85,7 @@ const AuthCode: React.FC<Props> = ({
         onKeyDown={handleOnKeyDown}
         onFocus={handleOnFocus}
         onPaste={handleOnPaste}
-        type={password ? 'password' : 'text'}
+        type={inputType || password ? 'password' : 'text'}
         ref={(el: HTMLInputElement) => (inputsRef.current[i] = el)}
         maxLength={1}
         style={inputStyle}
